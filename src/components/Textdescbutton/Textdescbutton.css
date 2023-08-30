@@ -1,0 +1,37 @@
+.textdescbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.textdescbutton p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+.textdescbutton__btn{
+    margin-top: 5%;
+}
+
+
+
+@media screen and (max-width:940px) {
+    .textdescbutton{
+        width: 100%;
+        justify-content: center;
+        align-items: center !important;
+        padding-top: 5%;
+    }
+
+    .textdescbutton p{
+        width: 72%;
+        text-align: justify;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}

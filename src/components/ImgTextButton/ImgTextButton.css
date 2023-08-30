@@ -1,0 +1,25 @@
+.imgtextbutton {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+}
+
+img.imgtextbutton__img {
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:940px) {
+    .imgtextbutton {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgtextbutton__img {
+        width: 100%;
+        height: 200px !important;
+        border-radius: 12px;
+    }
+}

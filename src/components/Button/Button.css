@@ -1,0 +1,19 @@
+.btn{
+    width: 150px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: "BASKE2", sans-serif;
+    transition: filter 0.3s ease;
+
+}
+
+.btn:hover{
+    cursor: pointer;
+    filter: brightness(1.3); /* Disminuye el brillo al 80% para atenuar el color */
+
+
+}
