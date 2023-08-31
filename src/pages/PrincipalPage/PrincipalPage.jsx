@@ -41,22 +41,22 @@ const PrincipalPage = () => {
             </div>
             <section id='/' className="home">
                 <div className='home__content'>
-                    <Textdescbutton title1="Dining in the woods" title2="Cabaña de madera ubicada en las montañas de Muxbal." textbutton="Ordenar" buttoncolor="#018546" color="#fff" textcolor="#fff" fontsize="32px" center/>
+                    <Textdescbutton title1="Dining in the woods" title2="Cabaña de madera ubicada en las montañas de Muxbal." textbutton="Ordenar" buttoncolor="#018546" color="#fff" textcolor="#fff" fontsize="32px" center link url={"http://boquiteo.com/"}/>
                 </div>
             </section>
             <section id='menu' className="menu">
                 <div className='menu__content'>
                     <img src="/images/menu.png" alt="menu" className="menu__img"/>
-                    <Textdescbutton title1="Menú" title2="Nos especializamos en atender personalmente a nuestros clientes, servimos carnes, pastas, risottos, mariscos, excelentes vinos y licores en un ambiente espectacular." textbutton="Ver menú" buttoncolor="#018546" color="#fff" textcolor="#333333" fontsize="32px"/>
+                    <Textdescbutton title1="Menú" title2="Nos especializamos en atender personalmente a nuestros clientes, servimos carnes, pastas, risottos, mariscos, excelentes vinos y licores en un ambiente espectacular." textbutton="Ver menú" buttoncolor="#018546" color="#fff" textcolor="#333333" fontsize="32px" link url={"https://drive.google.com/file/d/1mk2Vo0pIqcEK0BYtWd_i3bW27-H-KKCc/view?mcp_token=eyJwaWQiOjE3NjkxNTMzNTY5Njc1MSwic2lkIjoyNjQ1ODcyMDEsImF4IjoiN2E0OWU0NjhjMjQxZTQyMzA2MzI1ZDU1ODEzOTZjYTciLCJ0cyI6MTY5MzUwNzM5NSwiZXhwIjoxNjk1OTI2NTk1fQ.uGo6D_sD-fe3w1HncnCk4q8EL84xehJZ4-xIvugQYmM"}/>
                 </div>
             </section>
             <section id='servicios' className="services">
                 <div className='services__content'>
                     <Title title1="Fine Dining"  color="#fff" fontsize="80px" center/>
                     <div className='services__content__text'>
-                        <ImgTextButton img="/images/services1.png" title1="" title2="Reservaciones" paragraph="¿De qué tienes antojo hoy? Reserva ahora." textbutton="Reservar" buttoncolor="#fff" color="#000" textcolor="#fff" fontsize="2.5rem"/>
-                        <ImgTextButton img="/images/services2.png" title1="" title2="Delivery" paragraph="Comida exquisita directamente a donde tú estás." textbutton="Ordena ya" buttoncolor="#fff" color="#000" textcolor="#fff" fontsize="2.5rem"/>
-                        <ImgTextButton img="/images/services3.png" title1="" title2="Eventos" paragraph="Experiencias inolvidables con nosotros." textbutton="Cotizar" buttoncolor="#fff" color="#000" textcolor="#fff" fontsize="2.5rem"/>
+                        <ImgTextButton img="/images/services1.png" title1="" title2="Reservaciones" paragraph="¿De qué tienes antojo hoy? Reserva ahora." textbutton="Reservar" buttoncolor="#fff" color="#000" textcolor="#fff" fontsize="2.5rem" link url={"https://eatapp.co/reserve/la-pista-20fb20"}/>
+                        <ImgTextButton img="/images/services2.png" title1="" title2="Delivery" paragraph="Comida exquisita directamente a donde tú estás." textbutton="Ordena ya" buttoncolor="#fff" color="#000" textcolor="#fff" fontsize="2.5rem" link url={"http://boquiteo.com/"}/>
+                        <ImgTextButton img="/images/services3.png" title1="" title2="Eventos" paragraph="Experiencias inolvidables con nosotros." textbutton="Cotizar" buttoncolor="#fff" color="#000" textcolor="#fff" fontsize="2.5rem" link url={"https://wa.me/31746160?text=Hola, me gustaría cotizar un evento."}/>
                     </div>
                 </div>
             </section>
@@ -98,7 +98,7 @@ const PrincipalPage = () => {
                         <li className='horario__content__item'>Sábado – 9.00 am a 10.00 pm</li>
                         <li className='horario__content__item'>Domingo – 9.00 am a 4.00 pm</li>
                     </ul>
-                    <Button text="Reservar" whatsapp={true} backgroundcolor={"#018546"} colortext={"#fff"}/>
+                    <Button text="Reservar" whatsapp={true} backgroundcolor={"#018546"} colortext={"#fff"} link url={"https://eatapp.co/reserve/la-pista-20fb20"}/>
                 </div>
                 </div>
             </section>

@@ -39,7 +39,7 @@ const Navbar = () => {
                         <Link to="horario" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Horarios</Link>
                     </li>
                 </ul>
-                <Button text="Reservar" whatsapp={true} backgroundcolor={"#018546"} colortext={"#fff"}/>
+                <Button text="Reservar" link url={"https://eatapp.co/reserve/la-pista-20fb20"} backgroundcolor={"#018546"} colortext={"#fff"}/>
             </nav>
         </div>
     )

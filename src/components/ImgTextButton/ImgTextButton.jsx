@@ -3,11 +3,15 @@ import PropTypes from "prop-types"
 import "./ImgTextButton.css"
 import Textdescbutton from "../Textdescbutton/Textdescbutton"
 
-const ImgTextButton = ({ img, title1, title2, paragraph, textbutton, buttoncolor, color, textcolor, fontsize }) => {
+const ImgTextButton = ({ img, title1, title2, paragraph, textbutton, buttoncolor, color, textcolor, fontsize, link, url }) => {
     return (
         <div className='imgtextbutton'>
             <img src={img} alt='img' className='imgtextbutton__img' />
+            {link ? (
+                <Textdescbutton title1={title1} title2={title2} paragraph={paragraph} textbutton={textbutton} buttoncolor={buttoncolor} color={color} textcolor={textcolor} fontsize={fontsize} link url={url}/>
+            ) : (
             <Textdescbutton title1={title1} title2={title2} paragraph={paragraph} textbutton={textbutton} buttoncolor={buttoncolor} color={color} textcolor={textcolor} fontsize={fontsize}/>
+            )}
         </div>
     )
 }

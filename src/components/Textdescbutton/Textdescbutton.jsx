@@ -4,7 +4,7 @@ import "./Textdescbutton.css"
 import Button from "../Button/Button"
 import TitleComponent from "../Title/Title"
 
-const Textdescbutton = ({ title1, title2, paragraph, textbutton, buttoncolor, color, textcolor, fontsize, center }) => {
+const Textdescbutton = ({ title1, title2, paragraph, textbutton, buttoncolor, color, textcolor, fontsize, center, link ,url  }) => {
     return (
         <div className='textdescbutton' style={{ alignItems: center ? "center" : "initial" }}>
             {
@@ -22,7 +22,11 @@ const Textdescbutton = ({ title1, title2, paragraph, textbutton, buttoncolor, co
                 )
             )}
             <div className='textdescbutton__btn'>
-                <Button text={textbutton} backgroundcolor={buttoncolor} colortext={color} />
+                {link ? (
+                    <Button text={textbutton} link url={url} backgroundcolor={buttoncolor} colortext={color} />
+                ) : (
+                    <Button text={textbutton} backgroundcolor={buttoncolor} colortext={color} />
+                )}
             </div>
         </div>
     )
@@ -40,7 +44,9 @@ Textdescbutton.propTypes = {
     color: PropTypes.string,
     textcolor: PropTypes.string,
     fontsize: PropTypes.string,
-    center: PropTypes.bool
+    center: PropTypes.bool,
+    link: PropTypes.bool,
+    url: PropTypes.string,
 }
 
 export default Textdescbutton

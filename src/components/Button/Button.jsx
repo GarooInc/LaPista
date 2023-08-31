@@ -2,11 +2,18 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./Button.css"
 
-const Button = ({ text, whatsapp, backgroundcolor,colortext }) => {
+const Button = ({ text, whatsapp, backgroundcolor,colortext, link, url }) => {
     const handleClick = () => {
         if (whatsapp) {
             handleWhatsapp()
+        }else if (link) {
+            handleLink()
         }
+    }
+
+    const handleLink = () => {
+        const url_link = url
+        window.open(url_link, "_blank")
     }
 
     const handleWhatsapp = () => {
@@ -27,7 +34,9 @@ Button.propTypes = {
     text: PropTypes.string.isRequired,
     whatsapp: PropTypes.bool,
     backgroundcolor: PropTypes.string,
-    colortext: PropTypes.string
+    colortext: PropTypes.string,
+    link: PropTypes.bool,
+    url: PropTypes.string,
 }
 
 export default Button

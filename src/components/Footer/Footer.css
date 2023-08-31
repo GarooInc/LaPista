@@ -83,7 +83,7 @@
     font-weight: 800;
 }
 
-.footer-column a{
+.footer-column a, .footer-description a{
     color: #000;
     text-decoration: none;
 
@@ -101,6 +101,10 @@
 
     .footer-left h3 {
         font-size: 18px;
+    }
+
+    .footer-description{
+        margin-left: 0;
     }
 
     .footer-left {
