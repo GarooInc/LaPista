@@ -29,7 +29,7 @@ const Contact = () => {
                             placeholder="Mensaje"
                             name="message"
                         />
-                        <Button text="Enviar" colortext="#fff"/>
+                        <Button text="Enviar" backgroundcolor="#000" colortext="#fff"/>
                     </form>
                 </div>
             </div>
