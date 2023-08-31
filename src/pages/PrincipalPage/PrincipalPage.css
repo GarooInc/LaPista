@@ -410,13 +410,13 @@ img.nosotros__img {
     }
 
     .swiper-button-prev{
-        left: -2px !important;
+        left: 4px !important;
         top: 100px !important;
         color: #fff !important;
     }
 
     .swiper-button-next {
-        right: -2px !important;
+        right: 4px !important;
         top: 100px !important;
         color: #fff !important;
     }
