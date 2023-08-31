@@ -24,6 +24,12 @@
     text-transform: capitalize;
     font-weight: bold;
     font-size: 80px;
+    font-family: "BaskervilleBoldBT";
+}
+
+.title2{
+    font-family: "BaskervilleBT";
+    white-space: pre-line;
 }
 
 .titlecolumn .title2{
@@ -46,7 +52,9 @@
     }
 
     .titlecolumn .title2{
-        font-size: 20px !important;
+        font-size: 25px !important;
+        margin: 0;
+        padding: 0;
     }
 
     .titleunderlined{

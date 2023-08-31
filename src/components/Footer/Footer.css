@@ -12,6 +12,27 @@
     justify-content: flex-start;
 }
 
+.footer-left h3, .footer-copyright{
+    color : #000;
+}
+
+.footer-left h3{
+    font-family: "BaskervilleBoldBT";
+    color : #018546;
+    font-size: 32px;
+    margin: 20px 0 0 0;
+}
+
+.footer-copyright{
+    padding: 10px;
+    text-align: center;
+    font-family: "BaskervilleBT";
+}
+
+.footer__content{
+    width: 100%;
+}
+
 .footer-social img {
     width: 40px;
     height: 40px;
@@ -19,6 +40,12 @@
 
 .footer-left p{
     color: #000;
+    margin: 0;
+    font-family: "BaskervilleBT";
+}
+
+.footer-description{
+    margin-left: 20px;
 }
 
 .footer-right {
@@ -28,15 +55,12 @@
 }
 
 .footer-logo {
-    width: 200px;
-}
-
-.footer-description {
-    margin-bottom: 20px;
+    width: 150px;
+    padding-top: 30px;
 }
 
 .footer-socials {
-    margin-bottom: 20px;
+    margin: 30px 0;
 }
 
 .footer-social {
@@ -89,19 +113,20 @@
 
     .footer-socials {
         display: flex;
-        }
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
 
     .footer-logo{
         display: flex;
+        margin: 0;
+        padding: 0;
     }
 
     .footer-social img {
         width: 30px;
         height: 30px;
-    }
-
-    .footer-description{
-        display: none;
     }
 
     .footer-column {
