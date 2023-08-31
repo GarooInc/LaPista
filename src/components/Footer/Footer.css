@@ -67,7 +67,7 @@
     margin-right: 10px;
 }
 
-.footer-social img:hover {
+.footer-social img:hover, .footer-social img:focus {
     transform: scale(1.1);
 }
 
