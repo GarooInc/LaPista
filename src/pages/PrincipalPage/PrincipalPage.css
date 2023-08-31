@@ -6,6 +6,7 @@
 .principalPage__header {
     width: 100%;
     height: 90px;
+    position: absolute;
 }
 
 section{
@@ -199,6 +200,10 @@ img.nosotros__img {
     background-color: #fff;
     padding: 40px;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact{
@@ -288,6 +293,22 @@ img.nosotros__img {
 
 .swiper{
     z-index: 0 !important;
+}
+
+.horario__content__list{
+    color : #000;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+.horario__content__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    font-size: 32px;
 }
 
 
@@ -385,6 +406,15 @@ img.nosotros__img {
 
     .swiper-button-next {
         right: -2px !important;
+    }
+
+    .horario__content__item{
+        font-size: 16px;
+        margin: 0 0 20px 0;
+    }
+
+    .horario__content__list{
+        padding: 20px 0;
     }
 
     .contact{

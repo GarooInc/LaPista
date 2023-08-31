@@ -9,6 +9,7 @@ import ImgTextButton from "../../components/ImgTextButton/ImgTextButton"
 // core version + navigation, pagination modules:
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from 'swiper/modules'
+import Button from "../../components/Button/Button"
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -88,13 +89,16 @@ const PrincipalPage = () => {
                 <div className='horario__content'>
                 <Title title1="Horarios" color="#fff" fontsize="80px" center />
                 <div className='horario__content__text'>
-                    <Textdescbutton title2="Lunes – 12.00 am a 10.00 pm
-                    Martes – 12.00 am a 10.00 pm
-                    Miércoles – 12.00 am a 10.00 pm
-                    Jueves – 12.00 am a 10.00 pm
-                    Viernes – 12.00 am a 10.00 pm
-                    Sábado – 9.00 am a 10.00 pm
-                    Domingo – 9.00 am a 4.00 pm" textbutton="Reservar" buttoncolor="#000" color="#fff" textcolor="#000" fontsize="32px" center/>
+                    <ul className='horario__content__list'>
+                        <li className='horario__content__item'>Lunes – 12.00 am a 10.00 pm</li>
+                        <li className='horario__content__item'>Martes – 12.00 am a 10.00 pm</li>
+                        <li className='horario__content__item'>Miércoles – 12.00 am a 10.00 pm</li>
+                        <li className='horario__content__item'>Jueves – 12.00 am a 10.00 pm</li>
+                        <li className='horario__content__item'>Viernes – 12.00 am a 10.00 pm</li>
+                        <li className='horario__content__item'>Sábado – 9.00 am a 10.00 pm</li>
+                        <li className='horario__content__item'>Domingo – 9.00 am a 4.00 pm</li>
+                    </ul>
+                    <Button text="Reservar" whatsapp={true} backgroundcolor={"#018546"} colortext={"#fff"}/>
                 </div>
                 </div>
             </section>
