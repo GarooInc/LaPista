@@ -381,7 +381,7 @@ img.nosotros__img {
     }
 
     .nosotros__text {
-        margin: 10% 10%;
+        margin: 30px 0;
     }
 
     .services {
@@ -422,8 +422,9 @@ img.nosotros__img {
     }
 
     .horario__content__item{
-        font-size: 16px;
+        font-size: 18px;
         margin: 0 0 20px 0;
+        font-family: "BaskervilleBT";
     }
 
     .horario__content__list{

@@ -63,6 +63,7 @@
     justify-content: center;
     width: 80%;
     height: 100%;
+    font-family: "BaskervilleBT";
 }
 
 .h1c{
@@ -87,6 +88,11 @@
     padding: 20px;
     color : #000;
 }
+
+.contact__content__info__container h2, .contact__content__info__container p {
+    font-family: "BaskervilleBT";
+}
+
 
 .contact__content__info__phone{
     display: flex;
