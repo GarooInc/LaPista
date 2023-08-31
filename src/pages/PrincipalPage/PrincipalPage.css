@@ -375,9 +375,13 @@ img.nosotros__img {
     }
 
     img.nosotros__img {
-        width: calc(100% - 20%);
+        width: 100%;
         height: 200px;
-        margin: 0 10%;
+        margin: 0;
+    }
+
+    .nosotros__text {
+        margin: 10% 10%;
     }
 
     .services {
@@ -393,6 +397,11 @@ img.nosotros__img {
         object-fit: contain;
     }
 
+    .contentslider{
+        margin: 0;
+        width: 100%;
+    }
+
 
     .services__content {
         flex-direction: column;
@@ -402,10 +411,14 @@ img.nosotros__img {
 
     .swiper-button-prev{
         left: -2px !important;
+        top: 100px !important;
+        color: #fff !important;
     }
 
     .swiper-button-next {
         right: -2px !important;
+        top: 100px !important;
+        color: #fff !important;
     }
 
     .horario__content__item{
