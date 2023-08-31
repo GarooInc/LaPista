@@ -66,6 +66,15 @@ img.home__img {
     }
 }
 
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 img.menu__img {
     width: calc(100% - 60px);
@@ -115,6 +124,7 @@ img.menu__img {
     height: 100%;
     flex-direction: column;
     margin-top: 30px;
+    animation: slideFromRight 5s ease;
     
 }
 
@@ -309,6 +319,7 @@ img.nosotros__img {
     gap: 10px;
     color: #000;
     font-size: 32px;
+    font-family: "BaskervilleBT";
 }
 
 

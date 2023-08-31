@@ -19,7 +19,7 @@
 .footer-left h3{
     font-family: "BaskervilleBoldBT";
     color : #018546;
-    font-size: 32px;
+    font-size: 20px;
     margin: 20px 0 0 0;
 }
 
@@ -65,6 +65,10 @@
 
 .footer-social {
     margin-right: 10px;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
 }
 
 .footer-column {
