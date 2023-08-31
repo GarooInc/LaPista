@@ -95,6 +95,10 @@
         gap: 20px;
     }
 
+    .footer-left h3 {
+        font-size: 18px;
+    }
+
     .footer-left {
         width: 100%;
         display: flex;
