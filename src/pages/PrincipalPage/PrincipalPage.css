@@ -35,6 +35,7 @@ img.home__img {
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 
@@ -349,11 +350,7 @@ img.nosotros__img {
     }
 
     .home__content {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column-reverse;
+        margin-top: 30px;
     }
 
     .home__content img {
