@@ -331,6 +331,7 @@ img.nosotros__img {
         align-items: center;
         justify-content: center;
         position: static;
+        height: 500px;
     }
 
     .home__image{
@@ -363,6 +364,7 @@ img.nosotros__img {
         flex-direction: column;
         align-items: center;
         background-color: #fff;
+        height: 700px;
     }
     
     .menu__content{
@@ -390,6 +392,14 @@ img.nosotros__img {
 
     .nosotros__text {
         margin: 30px 0;
+    }
+
+    .nosotros{
+        height: 700px;
+    }
+
+    .nosotros__content{
+        margin: 0;
     }
 
     .services {
@@ -445,6 +455,7 @@ img.nosotros__img {
 
     .contact__content {
         gap: 10px;
+        margin: 0;
     }
 
     .prefooter{
@@ -481,6 +492,7 @@ img.nosotros__img {
     .horario {
         justify-content: flex-start;
         padding-top: 10%;
+        height: 600px;
     }
 
     .location__content__map {
