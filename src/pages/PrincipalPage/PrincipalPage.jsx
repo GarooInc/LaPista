@@ -98,7 +98,7 @@ const PrincipalPage = () => {
                         <li className='horario__content__item'>Sábado – 9.00 am a 10.00 pm</li>
                         <li className='horario__content__item'>Domingo – 9.00 am a 4.00 pm</li>
                     </ul>
-                    <Button text="Reservar" whatsapp={true} backgroundcolor={"#018546"} colortext={"#fff"} link url={"https://eatapp.co/reserve/la-pista-20fb20"}/>
+                    <Button text="Reservar" backgroundcolor={"#018546"} colortext={"#fff"} link url={"https://eatapp.co/reserve/la-pista-20fb20"}/>
                 </div>
                 </div>
             </section>
