@@ -9,7 +9,9 @@ const Footer = () => {
                 <div className="footer-description">
                 <h3>Dirección</h3>
                 <p>Km 9.5 Carretera a Muxbal Guatemala, 01051, GT.</p>
+                <h3>Teléfono</h3>
                 <p><a href="callto:+502 3174 6160">+502 3174 6160</a></p>
+                <h3>Correo</h3>
                 <p><a href="mailto:info@boquiteo.com">info@boquiteo.com</a></p>
                 </div>
             </div>             
