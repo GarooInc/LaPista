@@ -113,7 +113,7 @@ img.home__img {
     height: 100%;
     flex-direction: column;
     margin-top: 30px;
-    animation: slideFromRight 5s ease;
+    animation: slideFromRight 10s ease;
     
 }
 
