@@ -123,8 +123,8 @@ const PrincipalPage = () => {
                 <div className='services__content'>
                     <Title title1="Menú"  color="#000" fontsize="80px" center/>
                     <div className='services__content__text'>
-                        <ImgTextButton img="/images/menu1.png" title1="" title2="Desayunos" paragraph="¿De qué tienes antojo hoy? Reserva ahora." textbutton="Ver menú" buttoncolor="#000" color="#fff" textcolor="#000" fontsize="32px" link url={"https://eatapp.co/reserve/la-pista-20fb20"}/>
-                        <ImgTextButton img="/images/menu.png" title1="" title2="Almuerzos" paragraph="Comida exquisita directamente a donde tú estás." textbutton="Ver menú" buttoncolor="#000" color="#fff" textcolor="#000" fontsize="32px" link url={"http://boquiteo.com/"}/>
+                        <ImgTextButton img="/images/menu1.png" title1="" title2="Desayunos" paragraph="¿De qué tienes antojo hoy? Reserva ahora." textbutton="Ver menú" buttoncolor="#000" color="#fff" textcolor="#000" fontsize="32px" link url={"https://drive.google.com/file/d/1bvbwKChnsehmhgbiWXLTbLYyVPFJhSyO/view?mcp_token=eyJwaWQiOjE3NjkxNTMzNTY5Njc1MSwic2lkIjoyNjQ1ODcyMDEsImF4IjoiNzdiZWI2ZmM1NmE2NjYyNjhmNDhiZGE0OGUzZGQ4ZmYiLCJ0cyI6MTY5MzU5MzI3OCwiZXhwIjoxNjk2MDEyNDc4fQ.hWUeKmGMaTU2-ai71S6LkU3QjgD5RIalQNj13kyIpt8"}/>
+                        <ImgTextButton img="/images/menu.png" title1="" title2="Almuerzos" paragraph="Comida exquisita directamente a donde tú estás." textbutton="Ver menú" buttoncolor="#000" color="#fff" textcolor="#000" fontsize="32px" link url={"https://drive.google.com/file/d/1mk2Vo0pIqcEK0BYtWd_i3bW27-H-KKCc/view?mcp_token=eyJwaWQiOjE3NjkxNTMzNTY5Njc1MSwic2lkIjoyNjQ1ODcyMDEsImF4IjoiN2E0OWU0NjhjMjQxZTQyMzA2MzI1ZDU1ODEzOTZjYTciLCJ0cyI6MTY5MzUwNzM5NSwiZXhwIjoxNjk1OTI2NTk1fQ.uGo6D_sD-fe3w1HncnCk4q8EL84xehJZ4-xIvugQYmM"}/>
                     </div>
                 </div>
             </section>
