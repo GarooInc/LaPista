@@ -146,6 +146,15 @@ const PrincipalPage = () => {
                 </div>
                 </div>
             </section>
+            <section id='location' className="location">
+                <div className='location__content'>
+                    <Title title1="Ubicación" color="#fff" fontsize="80px" center />
+                </div>
+                <img src="/images/location.png" alt="horario" className="location__content__img"onClick={
+                    () => window.open("https://www.google.com/maps/place/Restaurante+La+Pista/@14.5583979,-90.4721467,16z/data=!4m6!3m5!1s0x8589a499486e2b17:0xfb5b9bfd68149e16!8m2!3d14.5589035!4d-90.4735276!16s%2Fg%2F11c59wd2hm?hl=es&entry=ttu", "_blank")
+                }/>
+            </section>
+
             <section id='nosotros' className="nosotros">
             <div className='nosotros__content'>
                 <Title title1="Nosotros" color="#000" center fontsize="32px"  />

@@ -36,6 +36,9 @@ const Navbar = () => {
                         <Link to="horario" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Horarios</Link>
                     </li>
                     <li className='nav-item'>
+                        <Link to="location" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Ubicación</Link>
+                    </li>
+                    <li className='nav-item'>
                         <Link to="nosotros" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Nosotros</Link>
                     </li>
                 </ul>

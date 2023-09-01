@@ -68,7 +68,7 @@ img.home__img {
   .column img {
     margin-top: 8px;
     vertical-align: middle;
-    width: 100%;
+    width: 90%;
     border-radius: 12px;
   }
 
@@ -117,6 +117,7 @@ img.home__img {
     
 }
 
+
 .swiper-button-prev, .swiper-button-next{
     color: #018546 !important;
 }
@@ -137,11 +138,29 @@ img.home__img {
     justify-content: space-between;
 }
 
-.horario__content img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+.location {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img.location__content__img {
+    width: 50%;
     object-fit: cover;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.location{
+    background-color: #000;
+}
+
+.location__content img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .contentslider{
@@ -432,16 +451,19 @@ img.nosotros__img {
         margin: 0;
     }
 
-    .swiper-button-prev{
-        left: 4px !important;
-        top: 100px !important;
-        color: #fff !important;
+    .location {
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10%;
+        height: 500px;
     }
-
-    .swiper-button-next {
-        right: 4px !important;
-        top: 100px !important;
-        color: #fff !important;
+    
+    img.location__content__img {
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
     }
 
     .horario__content__item{
@@ -514,6 +536,10 @@ img.nosotros__img {
         padding-top: 10% !important;
         padding-bottom: 10% !important;
     
+    }
+
+    .column img {
+        width: 100%;
     }
 
 
