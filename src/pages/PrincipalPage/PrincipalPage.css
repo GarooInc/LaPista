@@ -169,10 +169,15 @@ img.nosotros__img {
 
 .nosotros__text{
     color : #000;
-    margin: 10px 10%;
+    margin: 5%;
     font-size: 18px;
     text-align: justify;
     font-family: "BaskervilleBT";
+}
+
+.nosotros{
+    height: 100%;
+    padding: 30px 30px;
 }
 
 .nosotros__content {
