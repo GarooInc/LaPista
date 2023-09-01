@@ -10,6 +10,7 @@ import ImgTextButton from "../../components/ImgTextButton/ImgTextButton"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from 'swiper/modules'
 import Button from "../../components/Button/Button"
+import { imagesevents } from "../../imgesevents"
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -46,8 +47,40 @@ const PrincipalPage = () => {
             </section>
             <section id='events' className="events">
                 <div className='events__content'>
-                <Textdescbutton title1="Private events" title2="Contamos con salones privados para cumpleaños, bautizos o eventos corporativos." textbutton="Cotizar" buttoncolor="#000" color="#fff" textcolor="#000" fontsize="32px" center link url={"https://wa.me/31746160?text=Hola, me gustaría cotizar un evento."}/>
+                    <Textdescbutton title1="Private events" title2="Contamos con salones privados para cumpleaños, bautizos o eventos corporativos." textbutton="Cotizar" buttoncolor="#fff" color="#000" textcolor="#fff" fontsize="32px" link url={"https://wa.me/31746160?text=Hola, me gustaría cotizar un evento."}/>
+                    <div className="row">
+                    <div className="column">
+                        {imagesevents.slice(0, 2).map((image, index) => (
+                            <img 
+                                key={index} 
+                                src={image.src} 
+                                alt={image.alt || `Imagen ${index + 1}`} 
+                                style={{ cursor: 'pointer' }}
+                            />
+                        ))}
+                    </div>
+                    <div className="column">
+                        {imagesevents.slice(2, 5).map((image, index) => (
+                            <img
+                                key={index}
+                                src={image.src}
+                                alt={image.alt || `Imagen ${index + 1}`}
+                                style={{  cursor: 'pointer' }}
+                            />
+                        ))}
+                    </div>
+                    <div className="column">
+                        {imagesevents.slice(5, 8).map((image, index) => (
+                            <img
+                                key={index}
+                                src={image.src}
+                                alt={image.alt || `Imagen ${index + 1}`}
+                                style={{  cursor: 'pointer' }}
+                            />
+                        ))}
+                    </div>
                 </div>
+            </div>
             </section>
             <section id='servicios' className="services">
                 <div className='services__content'>
