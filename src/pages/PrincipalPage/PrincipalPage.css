@@ -21,6 +21,8 @@ section{
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background-home.jpeg');
     background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
     justify-content: space-between;
 }
 
