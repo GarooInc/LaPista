@@ -41,13 +41,12 @@ const PrincipalPage = () => {
             </div>
             <section id='/' className="home">
                 <div className='home__content'>
-                    <Textdescbutton title1="Dining in the woods" title2="Cabaña de madera ubicada en las montañas de Muxbal." textbutton="Ordenar" buttoncolor="#018546" color="#fff" textcolor="#fff" fontsize="32px" center link url={"http://boquiteo.com/"}/>
+                    <Textdescbutton title1="Dining in the woods" title2="Cabaña de madera ubicada en las montañas de Muxbal." textbutton="Book Now" buttoncolor="#018546" color="#fff" textcolor="#fff" fontsize="32px" center link url={"https://eatapp.co/reserve/la-pista-20fb20"}/>
                 </div>
             </section>
-            <section id='menu' className="menu">
-                <div className='menu__content'>
-                    <img src="/images/menu.png" alt="menu" className="menu__img"/>
-                    <Textdescbutton title1="Menú" title2="Nos especializamos en atender personalmente a nuestros clientes, servimos carnes, pastas, risottos, mariscos, excelentes vinos y licores en un ambiente espectacular." textbutton="Ver menú" buttoncolor="#018546" color="#fff" textcolor="#333333" fontsize="32px" link url={"https://drive.google.com/file/d/1mk2Vo0pIqcEK0BYtWd_i3bW27-H-KKCc/view?mcp_token=eyJwaWQiOjE3NjkxNTMzNTY5Njc1MSwic2lkIjoyNjQ1ODcyMDEsImF4IjoiN2E0OWU0NjhjMjQxZTQyMzA2MzI1ZDU1ODEzOTZjYTciLCJ0cyI6MTY5MzUwNzM5NSwiZXhwIjoxNjk1OTI2NTk1fQ.uGo6D_sD-fe3w1HncnCk4q8EL84xehJZ4-xIvugQYmM"}/>
+            <section id='events' className="events">
+                <div className='events__content'>
+                <Textdescbutton title1="Private events" title2="Contamos con salones privados para cumpleaños, bautizos o eventos corporativos." textbutton="Cotizar" buttoncolor="#000" color="#fff" textcolor="#000" fontsize="32px" center link url={"https://wa.me/31746160?text=Hola, me gustaría cotizar un evento."}/>
                 </div>
             </section>
             <section id='servicios' className="services">
