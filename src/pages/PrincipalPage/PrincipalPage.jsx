@@ -53,6 +53,9 @@ const PrincipalPage = () => {
         setLightboxOpen(false);
     };
 
+    const [visibleParagraphs, setVisibleParagraphs] = useState(1);
+
+
 
 
     return (
@@ -116,37 +119,12 @@ const PrincipalPage = () => {
                         />
                     )}
             </section>
-            <section id='servicios' className="services">
+            <section id='menu' className="services">
                 <div className='services__content'>
-                    <Title title1="Fine Dining"  color="#fff" fontsize="80px" center/>
+                    <Title title1="Menú"  color="#000" fontsize="80px" center/>
                     <div className='services__content__text'>
-                        <ImgTextButton img="/images/services1.png" title1="" title2="Reservaciones" paragraph="¿De qué tienes antojo hoy? Reserva ahora." textbutton="Reservar" buttoncolor="#fff" color="#000" textcolor="#fff" fontsize="2.5rem" link url={"https://eatapp.co/reserve/la-pista-20fb20"}/>
-                        <ImgTextButton img="/images/services2.png" title1="" title2="Delivery" paragraph="Comida exquisita directamente a donde tú estás." textbutton="Ordena ya" buttoncolor="#fff" color="#000" textcolor="#fff" fontsize="2.5rem" link url={"http://boquiteo.com/"}/>
-                        <ImgTextButton img="/images/services3.png" title1="" title2="Eventos" paragraph="Experiencias inolvidables con nosotros." textbutton="Cotizar" buttoncolor="#fff" color="#000" textcolor="#fff" fontsize="2.5rem" link url={"https://wa.me/31746160?text=Hola, me gustaría cotizar un evento."}/>
-                    </div>
-                </div>
-            </section>
-            <section id='nosotros' className="nosotros">
-            <div className='nosotros__content'>
-                <Title title1="Nosotros" color="#000" fontsize="32px" center />
-                    <div className="contentslider">
-                    <Swiper
-                        spaceBetween={30}
-                        cssMode={true}
-                        navigation={true}
-                        pagination={false}
-                        mousewheel={true}
-                        keyboard={true}
-                        modules={[ Navigation]}
-                        className="mySwiper"
-                    >
-                        {textoArray.map((parrafo, index) => (
-                            <SwiperSlide key={index}>
-                                <img src={`/images/nosotros${index + 1}.png`} alt={`nosotros${index + 1}`} className="nosotros__img"/>
-                                <p className='nosotros__text'>{parrafo}</p>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                        <ImgTextButton img="/images/menu1.png" title1="" title2="Desayunos" paragraph="¿De qué tienes antojo hoy? Reserva ahora." textbutton="Ver menú" buttoncolor="#000" color="#fff" textcolor="#000" fontsize="32px" link url={"https://eatapp.co/reserve/la-pista-20fb20"}/>
+                        <ImgTextButton img="/images/menu.png" title1="" title2="Almuerzos" paragraph="Comida exquisita directamente a donde tú estás." textbutton="Ver menú" buttoncolor="#000" color="#fff" textcolor="#000" fontsize="32px" link url={"http://boquiteo.com/"}/>
                     </div>
                 </div>
             </section>
@@ -166,6 +144,24 @@ const PrincipalPage = () => {
                     </ul>
                     <Button text="Reservar" backgroundcolor={"#018546"} colortext={"#fff"} link url={"https://eatapp.co/reserve/la-pista-20fb20"}/>
                 </div>
+                </div>
+            </section>
+            <section id='nosotros' className="nosotros">
+            <div className='nosotros__content'>
+                <Title title1="Nosotros" color="#000" fontsize="32px"  />
+                    <div className="contentslider">
+                    <img src="/images/nosotros.png" alt="nosotros" className="contentslider__img"/>
+                    <div className="nosotros__text">
+                        {textoArray.slice(0, visibleParagraphs).map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                        ))}
+                        {visibleParagraphs < textoArray.length && (
+                            <Button onClick={() => setVisibleParagraphs(visibleParagraphs + 1)} backgroundcolor="#000" colortext="#fff" text="Ver más">
+                                Leer más
+                            </Button>
+                        )}
+                    </div>
+                    </div>
                 </div>
             </section>
             <section id='contact' className="contact">

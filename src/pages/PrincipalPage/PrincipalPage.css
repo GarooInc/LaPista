@@ -69,6 +69,7 @@ img.home__img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    border-radius: 12px;
   }
 
 
@@ -103,7 +104,7 @@ img.home__img {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: #018546;
+    background-color: #fff;
 }
 
 .services__content{
@@ -148,6 +149,14 @@ img.home__img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nosotros__paragraph{
+    font-family: "BaskervilleBT";
+    font-size: 18px;
+    color: #000;
+    text-align: justify;
+    margin: 0;
 }
 
 img.nosotros__img {
@@ -378,12 +387,14 @@ img.nosotros__img {
     }
 
     .nosotros{
-        height: 650px;
+        height: 100%;
     }
 
     .nosotros__content{
         margin: 0;
+        flex-direction: column;
     }
+
 
     .services {
         display: flex;
@@ -401,6 +412,12 @@ img.nosotros__img {
     .contentslider{
         margin: 0;
         width: 100%;
+        flex-direction: column;
+    }
+
+    .contentslider__img {
+        width: 100%;
+        object-fit: cover;
     }
 
 

@@ -27,16 +27,16 @@ const Navbar = () => {
                         <Link to="/" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="menu" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Menu</Link>
+                        <Link to="events" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Eventos</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="servicios" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Servicios</Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="nosotros" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Nosotros</Link>
+                        <Link to="menu" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Menú</Link>
                     </li>
                     <li className='nav-item'>
                         <Link to="horario" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Horarios</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to="nosotros" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Nosotros</Link>
                     </li>
                 </ul>
                 <Button text="Reservar" link url={"https://eatapp.co/reserve/la-pista-20fb20"} backgroundcolor={"#018546"} colortext={"#fff"}/>
