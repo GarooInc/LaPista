@@ -11,6 +11,9 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from 'swiper/modules'
 import Button from "../../components/Button/Button"
 import { imagesevents } from "../../imgesevents"
+import Lightbox from 'yet-another-react-lightbox';
+import "yet-another-react-lightbox/styles.css";
+
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -32,6 +35,23 @@ const PrincipalPage = () => {
         
         "Desde entonces, nunca han tenido un turno en blanco y siempre han atendido a al menos una persona en cada turno, manteniendo el récord durante casi 14 años. En septiembre de 2009, inauguraron oficialmente el restaurante La Pista, y desde entonces, han continuado haciendo lo único que hace que un restaurante tenga éxito: asegurarse de que los clientes regresen. La historia de La Pista es un verdadero ejemplo de cómo la creatividad, el apoyo de la familia y la pasión por el negocio pueden crear un éxito duradero."
     ]
+
+    // Estado para controlar la visibilidad del lightbox
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+    // Estado para almacenar la imagen actual que se mostrará en el lightbox
+    const [currentImage, setCurrentImage] = useState(null);
+
+    // Función para abrir el lightbox con una imagen específica
+    const openLightbox = (imageSrc) => {
+        setCurrentImage(imageSrc);
+        setLightboxOpen(true);
+    };
+
+    // Función para cerrar el lightbox
+    const closeLightbox = () => {
+        setCurrentImage(null);
+        setLightboxOpen(false);
+    };
 
 
 
@@ -56,6 +76,7 @@ const PrincipalPage = () => {
                                 src={image.src} 
                                 alt={image.alt || `Imagen ${index + 1}`} 
                                 style={{ cursor: 'pointer' }}
+                                onClick={() => openLightbox(image.src)}
                             />
                         ))}
                     </div>
@@ -66,6 +87,7 @@ const PrincipalPage = () => {
                                 src={image.src}
                                 alt={image.alt || `Imagen ${index + 1}`}
                                 style={{  cursor: 'pointer' }}
+                                onClick={() => openLightbox(image.src)}
                             />
                         ))}
                     </div>
@@ -76,11 +98,23 @@ const PrincipalPage = () => {
                                 src={image.src}
                                 alt={image.alt || `Imagen ${index + 1}`}
                                 style={{  cursor: 'pointer' }}
+                                onClick={() => openLightbox(image.src)}
                             />
                         ))}
                     </div>
                 </div>
             </div>
+            {lightboxOpen && (
+                        <Lightbox
+                            open={lightboxOpen}
+                            close={closeLightbox}
+                            slides={imagesevents.map((image) => ({
+                                src: image.src
+                            }))
+
+                            }
+                        />
+                    )}
             </section>
             <section id='servicios' className="services">
                 <div className='services__content'>
