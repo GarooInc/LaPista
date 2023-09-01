@@ -148,10 +148,11 @@ const PrincipalPage = () => {
             </section>
             <section id='nosotros' className="nosotros">
             <div className='nosotros__content'>
-                <Title title1="Nosotros" color="#000" fontsize="32px"  />
+                <Title title1="Nosotros" color="#000" center fontsize="32px"  />
                     <div className="contentslider">
                     <img src="/images/nosotros.png" alt="nosotros" className="contentslider__img"/>
                     <div className="nosotros__text">
+                        <Title title2="Nuestra historia" color="#000" fontsize="32px" center />
                         {textoArray.slice(0, visibleParagraphs).map((paragraph, index) => (
                             <p key={index}>{paragraph}</p>
                         ))}
